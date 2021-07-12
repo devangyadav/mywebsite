@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Black+Ops+One&family=Fredericka+the+Great&family=Niconne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0; 
+}
+html{
+       height: 100%;
+}
+/* Style the body */
+body{
+    background: -webkit-linear-gradient(40deg, rgb(32, 32, 32),rgb(255, 0, 55));
+    background-size:100% 800%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+  /* Style the header */
+.heading{
+    background-color: #ffe2a2;
+    padding: 2px;
+    text-align: center;
+    font-size: 10px;
+    margin: 10px;
+    padding: 15px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+h1{
+    font-family: 'Berkshire Swash', cursive;
+    margin-bottom: 2px;
+}
+#intro{
+    font-family: 'Niconne', cursive;
+    font-size:15px;
+    letter-spacing: 1;
+}
+.nav{
+    position: relative;
+    top: 10;
+    right:0;
+    left: -20;
+    float: right;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav a{  
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    letter-spacing: 2px;
+    padding: 4px 15px;
+    border-radius:none;
+    font-family: 'Dancing Script', cursive;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+header .nav a:not(:last-child)
+{
+   margin-right: 5px;
+}
+
+.nav a:hover{
+    color: #ffe2a2;
+    text-decoration: none;
+    list-style-type: none;
+    letter-spacing: 2px;
+    padding: 4px 15px;
+    border-radius: 1px;
+    border: 1px solid #ffe2a2;
+    transition: 0.3s; 
+}   
+label{
+   display: none;
+}
+
+#check{
+    z-index: 3;
+    display: none;
+}
+.center{
+    display: none;
+}
+
+.cards{ 
+         display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 7rem;
+        margin-right: 5rem;
+      
+}
+.cards a{
+        border-radius: 4px;
+        margin-left: 4rem;
+        padding: 120px 60px;
+        background:#ffe2a2;
+        text-align:center;
+        white-space: nowrap;
+        text-decoration: none;
+        
+}
+.cards h3{
+            color:#ffe2a2 ;
+            background: rgb(0, 0, 0); 
+            padding: 5px 20px; 
+}
+footer{
+        margin-top:auto;
+        width: 100%;
+        height: 9rem;
+        background: black;
+        border-top-left-radius:20px;
+        border-top-right-radius:20px; 
+        
+}
+
+.footerbg h3{
+    margin-top: 7rem;
+    margin-right:1rem;
+    float:right;
+    color:#ffe2a2;
+    white-space: nowrap;   
+}
+.footer-social{
+    margin-top: 1rem;
+    float:left;
+    list-style-type: none;
+    display:flex;
+}
+.footer-social li a{
+    color: #ffe2a2;
+    font-size: 15px;
+    letter-spacing: 15px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:960px)
+{  
+header .nav{
+ display: none;
+}
+
+label{
+    display:block;
+    font-size: 100px;
+    cursor: pointer;
+    transition: 0.2s;
+    transition-property: color;
+}
+
+label:hover{
+    color: rgb(0, 0, 0);
+}
+
+label .close{
+    display: none;
+}
+
+#check:checked ~ header .nav{
+       z-index: 2;
+       position: fixed;
+       background: rgba(0, 0, 0, 0.4);
+       background-size: 100% 200%;
+       top: 0;
+       bottom: 0;
+       left: 0;
+       right: 0;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       margin: 0;
+}
+
+#check:checked ~ header .nav a{
+    margin: 0;
+    margin-bottom: 3rem;
+    font-size: 1rem;
+}
+
+#check:checked ~ header label .menu{
+    display: none;
+}
+
+#check:checked ~ header label .close{
+     z-index: 2;
+     display: block;
+     position: absolute;
+     top: 110;
+     right: 18px;
+     color: #000000;
+     background-color: #ffe2a2;
+}
+
+label .menu{
+    position: absolute;
+    top: 110;
+    right: 18px;
+    border-radius:3px;
+    color: #000000;
+    background-color: #ffe2a2; 
+}
+
+.cards{ 
+    position:relative;
+    margin-top:2rem;
+    display:flex;
+    flex-direction: column;    
+}
+.cards a{
+        border-radius: 4px;
+        margin-left: 5rem;
+        margin-bottom: 2rem;
+        padding:40px 30px;
+        background:#ffe2a2;
+        text-align:center;
+        white-space: nowrap;
+        text-decoration: none;
+}
+.cards h3{
+            color:#ffe2a2 ;
+            background: rgb(0, 0, 0); 
+            padding: 5px 20px; 
+            width:100%; 
+}
+
+
+}
+
