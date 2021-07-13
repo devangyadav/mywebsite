@@ -138,8 +138,11 @@ footer{
     cursor: pointer;
 }
 
-@media screen and (max-width:600px)
+@media screen and (max-width:900px)
 {  
+  .column {
+    width: 100%;
+  }
 header .nav{
  display: none;
 }
@@ -229,9 +232,4 @@ label .menu{
 }
 
 
-}
-@media screen and (max-width:980px) {
-  .column {
-    width: 100%;
-  }
 }
