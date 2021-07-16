@@ -1,0 +1,255 @@
+<html>
+<head>
+    <title>Blogs</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+<style>
+*{
+        box-sizing: border-box;
+        margin: 0;  
+    }
+  
+html{
+       height: 100%;
+}
+/* Style the body */
+body{
+    background: -webkit-linear-gradient(40deg, rgb(32, 32, 32),rgb(255, 0, 55));
+    background-size:100% 1400%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             max-width: 1600px;
+             flex-wrap: wrap;
+             padding: 40px 0;
+}
+.container .card{
+                   position: relative;
+                   width: 240px;
+                   height: 300px;
+                   box-shadow: inset 4px 4px 1px #ffe2a2,
+                               inset -4px -4px 1px  #ffe2a2,
+                               inset  4px 4px 1px #ffe2a2,
+                               inset  -4px -4px 1px  #ffe2a2;
+                   border-radius: 15px;
+                   margin: 30px;
+
+}
+.container .card .box{
+                        position: absolute;
+                        top: 10px;
+                        left: 10px;
+                        right: 10px;
+                        bottom: 10px;
+                        background:#ffe2a2;
+                        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+                        border-radius: 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+}
+.container .card .box .content{
+                                 padding: 20px;
+                                 text-align: center;
+
+}
+.container .card .box .content h2{
+                                   position: absolute;
+                                   top:1rem;
+                                   right: 1rem;
+                                   font-size: 2rem;
+                                   color: rgba(0, 0, 0, 0.06);
+                                   transition: 0.5s;
+}
+.container .card:hover .box .content h2{
+                 color: rgba(0, 0, 0, 0.09);
+}
+.container .card .box .content h3{
+    font-size: 1.7em;
+    color: rgb(0, 0, 0);
+    z-index: 1;
+    transition: 0.5s;
+}
+.container .card .box .content p{
+                                  font-size: 20px;
+                                  font-weight: 300;
+                                  color: #777;
+                                  margin-top:1rem;
+                                  z-index: 1;
+                                  transition: 0.5s;
+}
+.container .card .box .content a{
+                                     position: relative;
+                                     display: inline-block;
+                                     padding: 8px 20px;
+                                     background:rgba(0, 0, 0, 0.9);
+                                     margin-top: 30px;
+                                     border-radius: 10px;
+                                     color: rgb(255, 255, 255);
+                                     text-decoration: none;
+                                     
+}
+
+footer{
+        margin-top:auto;
+        width: 100%;
+        height: 9rem;
+        background: black;
+        border-top-left-radius:20px;
+        border-top-right-radius:20px; 
+        
+}
+
+.footerbg h3{
+    margin-top: 7rem;
+    margin-right:1rem;
+    float:right;
+    color:#ffe2a2;
+    white-space: nowrap;   
+}
+.footer-social{
+    position: relative;
+    margin-top: 1rem;
+    margin-left:-1rem;
+    float:left;
+    list-style-type: none;
+    display:flex;
+}
+.footer-social li a{
+    color: #ffe2a2;
+    font-size: 15px;
+    letter-spacing: 15px;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+   
+    <div class="container">
+        <div class="card">
+          <div class="box">
+            <div class="content">
+              <h2>01</h2>
+              <h3>Blog One</h3>
+              <p>Easy Article Writing Tips</p>
+              <a href="https://ravigorani.blogspot.com/2021/06/easy-article-writing-tips.html">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <div class="content">
+              <h2>02</h2>
+              <h3>Blog Two</h3>
+              <p> 3 Steps To Profitable Stock Picking</p>
+              <a href="https://ravigorani.blogspot.com/2021/06/3-3-3-steps-to-profitable-stock-picking.html">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <div class="content">
+              <h2>03</h2>
+              <h3>Blog Three</h3>
+              <p>The Power Of Your Subconscious Mind</p>
+              <a href="https://ravigorani.blogspot.com/2021/06/power-of-your-subconscious-mind.html">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <div class="content">
+              <h2>04</h2>
+              <h3>Blog Four</h3>
+              <p>Plan Your Success</p>
+              <a href="https://ravigorani.blogspot.com/2021/06/plan-your-success.html">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="card">
+          <div class="box">
+            <div class="content">
+              <h2>05</h2>
+              <h3>Blog Five</h3>
+              <p>Easy Article Writing Tips</p>
+              <a href="https://ravigorani.blogspot.com/2021/06/easy-article-writing-tips.html">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <div class="content">
+              <h2>06</h2>
+              <h3>Blog six</h3>
+              <p> 3 Steps To Profitable Stock Picking</p>
+              <a href="https://ravigorani.blogspot.com/2021/06/3-3-3-steps-to-profitable-stock-picking.html">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <div class="content">
+              <h2>07</h2>
+              <h3>Blog seven</h3>
+              <p>The Power Of Your Subconscious Mind</p>
+              <a href="https://ravigorani.blogspot.com/2021/06/power-of-your-subconscious-mind.html">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <div class="content">
+              <h2>08</h2>
+              <h3>Blog eight</h3>
+              <p>Plan Your Success</p>
+              <a href="https://ravigorani.blogspot.com/2021/06/plan-your-success.html">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="card">
+          <div class="box">
+            <div class="content">
+              <h2>09</h2>
+              <h3>Blog nine</h3>
+              <p>Easy Article Writing Tips</p>
+              <a href="https://ravigorani.blogspot.com/2021/06/easy-article-writing-tips.html">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <div class="content">
+              <h2>10</h2>
+              <h3>Blog ten</h3>
+              <p> 3 Steps To Profitable Stock Picking</p>
+              <a href="https://ravigorani.blogspot.com/2021/06/3-3-3-steps-to-profitable-stock-picking.html">Read More</a>
+            </div>
+          </div>
+        </div>
+</div>
+      <footer>
+        <div class="footerbg">
+         <h3>~ devang yadav</h3>
+         <ul class="footer-social">
+          <li><a href="https://www.instagram.com/devang.ydv/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="https://t.me/devang_ydv"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+          <li><a href="https://twitter.com/devang_ydv?s=08"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.snapchat.com/add/devang.ydv"><i class="fa fa-snapchat" aria-hidden="true"></i></a></li>
+         </ul>
+        </div>
+      </footer>
+</body>
+</html>
