@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact us</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Black+Ops+One&family=Fredericka+the+Great&family=Niconne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0; 
+}
+html{
+       height: 100%;
+}
+body{
+    background: -webkit-linear-gradient(40deg, rgb(32, 32, 32),rgb(255, 0, 55));
+    background-size:100% 1400%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             max-width: 1600px;
+             flex-wrap: wrap;
+             padding: 40px 0;
+}
+.container .card{
+                   position: relative;
+                   width: 540px;
+                   height: 500px;
+                   background-color:rgba(255, 255,255,0.20); 
+                    box-shadow: 10px 9px 10px rgba(0,0,0,0.5); 
+                   border-radius: 15px;
+                   margin: 30px;
+}
+.container .card .box .content{
+                                 padding: 20px;
+                                 text-align: center;
+
+}
+.container .card .box .content h3{
+                                   font-size: 2rem;
+                                   color: rgb(255, 255, 255);
+                                   transition: 0.5s;
+                                   margin-bottom: 10px;
+}
+
+.word{
+        float: left;
+        color: white;
+}
+
+input[type=text], select {
+  width:100%;
+  padding: 12px 20px;
+  margin: 9px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=email], select {
+  width:100%;
+  padding: 12px 20px;
+  margin: 9px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea{
+  width:100%;
+  padding: 12px 20px;
+  margin: 9px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width:100%;
+  background-color: #8a8a8a;
+  color: white;
+  padding: 14px 20px;
+  margin: 9px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #38bd3e;
+}
+
+footer{
+        margin-top:auto;
+        width: 100%;
+        height: 9rem;
+        background: black;
+        border-top-left-radius:20px;
+        border-top-right-radius:20px; 
+        
+}
+.footerbg h3{
+    margin-top: 7rem;
+    margin-right:1rem;
+    float:right;
+    color:#ffe2a2;
+    white-space: nowrap;   
+}
+.footer-social{
+    position: relative;
+    margin-top: 1rem;
+    margin-left:-1rem;
+    float:left;
+    list-style-type: none;
+    display:flex;
+}
+.footer-social li a{
+    color: #ffe2a2;
+    font-size: 15px;
+    letter-spacing: 15px;
+    cursor: pointer;
+}
+
+
+</style>
+<body>
+
+    <div class="container">
+        <div class="card">
+          <div class="box">
+        <div class="content">
+            <h3>contact us</h3>
+          <form action="#">
+            <label class="word" for="name">Name</label><br>
+            <input type="text" id="name" name="fname" placeholder="Full Name..."><br>
+          
+            <label class="word" for="email">Email Address</label><br>
+            <input type="email" id="email" name="email" placeholder="Email Address..."><br>
+
+            <label class="word" for="comment">Comment Box</label><br>
+            <textarea name="comment" placeholder="Type Your Comment...."></textarea>
+
+            <label class="word"  for="country">Country</label><br>
+            <select id="country" name="country">
+              <option value="default">Default</option>
+              <option value="India">India</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+              <option value="pakistan">#PKMB</option>
+            </select><br>
+
+          
+
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+    </div>
+</div>
+</div>
+
+<footer>
+    <div class="footerbg">
+     <h3>~ devang yadav</h3>
+     <ul class="footer-social">
+      <li><a href="https://www.instagram.com/devang.ydv/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+      <li><a href="https://t.me/devang_ydv"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+      <li><a href="https://twitter.com/devang_ydv?s=08"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      <li><a href="https://www.snapchat.com/add/devang.ydv"><i class="fa fa-snapchat" aria-hidden="true"></i></a></li>
+     </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
